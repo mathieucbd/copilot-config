@@ -399,9 +399,7 @@ from the build brief:
 | COM-1 to COM-6 | `harness-commit.agent.md`; "never push" explicit. COM-3 to COM-5 also in `github.copilot.chat.commitMessageGeneration.instructions` (message text only). |
 | COM-7 | Your message after selecting the agent; `argument-hint`. |
 | W1 to W6, P1 to P3 | `home/.copilot/copilot-instructions.md` (merged as above). P3 also in `harness-review.agent.md` stance. |
-| PR-1 | `repo/.github/instructions/pricing.instructions.md`. The file's rationale sentence ("Pricing bugs return plausible numbers, not errors") is not ported: rules only. |
-| PR-2 | `repo/.github/instructions/pricing.instructions.md`, with `<!-- WORK: bank validation standards and tolerances -->` |
-| PR-3 to PR-12 | `repo/.github/instructions/pricing.instructions.md` |
+| PR-1 to PR-8 | `repo/.github/instructions/pricing.instructions.md`, verbatim copy of `correctness-pricing.md` below the frontmatter, including its preamble (every number ships with its check; tolerances are defaults that your or the bank's validation standards override). PR-1: freeze outputs before changing pricing code. PR-2: state and assert conventions; date every cash flow. PR-3: tag market data; one valuation date. PR-4: dividend model, borrow source, forwards. PR-5: label greeks. PR-6: validate outputs. PR-7: numerical engines. PR-8: P&L explain. |
 
-No PR rule was dropped as research- or backtest-specific: all twelve apply to
+No PR rule was dropped as research- or backtest-specific: all eight apply to
 pricing code.
